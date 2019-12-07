@@ -7,18 +7,13 @@ namespace Third_code
         static void Main(string[] args)
         {
             bool firstPhrase;
-            bool secondPhrase;
-            int test1TrueOrFalse;
-            int test2TrueOrFalse;
-            int goodAnswers;
+            int testTrueOrFalse;
             Console.WriteLine("Hello! Today we got math again");
             Console.Write("Answer the question is 6>5, say true or false: ");
             firstPhrase = Convert.ToBoolean(Console.ReadLine());
-            Console.Write("So.Ok. And is 10>15?: ");
-            secondPhrase = Convert.ToBoolean(Console.ReadLine());
             if (firstPhrase == true)
             {
-                Console.WriteLine("First answer is right good job");
+                Console.WriteLine("First answer is right, good job");
                 Console.ReadKey();
             }
             else
@@ -26,9 +21,19 @@ namespace Third_code
                 Console.WriteLine("I have a bad news about ur answer");
                 Console.ReadKey();
             }
-            if (secondPhrase == false)
+            if (firstPhrase == true)
             {
-                Console.WriteLine("Your second answer was good too");
+                testTrueOrFalse = 1;
+            }
+            else
+            {
+                testTrueOrFalse = 0;
+            }
+            Console.Write("So.Ok. And is 10>15?: ");
+            firstPhrase = Convert.ToBoolean(Console.ReadLine());
+            if (firstPhrase == false)
+            {
+                Console.WriteLine("Your second answer was good");
                 Console.ReadKey();
             }
             else
@@ -36,30 +41,27 @@ namespace Third_code
                 Console.WriteLine("I have a bad news about ur second answer");
                 Console.ReadKey();
             }
-            if (firstPhrase == true && secondPhrase == false)
+            if (firstPhrase == false)
             {
-                Console.WriteLine("\nYour answers was right");
+                testTrueOrFalse = testTrueOrFalse +1;
+            }
+            else
+            {
+                testTrueOrFalse = testTrueOrFalse +0;
+            }
+            if (testTrueOrFalse > 1)
+            {
+                Console.WriteLine("\nYour answers was right, сongratulations!");
                 Console.WriteLine("\nCount the number of correct answers");
                 Console.ReadKey();
             }
-            if (firstPhrase == true)
-            {
-                test1TrueOrFalse = 1;
-            }
             else
             {
-                test1TrueOrFalse = 0;
+                Console.WriteLine("\nTry to learn math more");
+                Console.WriteLine("\nCount the number of correct answers");
+                Console.ReadKey();
             }
-            if (secondPhrase == false)
-            {
-                test2TrueOrFalse = 1;
-            }
-            else
-            {
-                test2TrueOrFalse = 0;
-            }
-            goodAnswers = test1TrueOrFalse + test2TrueOrFalse;
-            Console.WriteLine($"\tYou have a {goodAnswers} right answers, congratulations!");
+            Console.WriteLine($"\tYou have a {testTrueOrFalse} right answers, ");
         }
     }
 }
