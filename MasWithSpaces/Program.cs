@@ -8,21 +8,17 @@ namespace MasWithSpaces
         {
             string aStartMas;
             string bAfterMas;
-            string temp;
-            string temp2;
             int i = 0;
             bool p = true;
-            Console.WriteLine("\tВведите длину массива");
-            int d = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\tВведите элементы массива через пробел");
+            Console.WriteLine("\tВведите элементы (числа) массива-палиндрома через пробел");
             string a = new string(Console.ReadLine());
             string[] b = a.Split(new string[] {" "}, StringSplitOptions.RemoveEmptyEntries);
-            int k = d / 2;
+            int k = a.Length / 2;
             for (i = 0; i <= k; i++)
             {
-                temp = b[i];
-                temp2 = b[b.Length - 1 - i];
-                if (temp != temp2)
+                aStartMas = b[i];
+                bAfterMas = b[b.Length - 1 - i];
+                if (aStartMas != bAfterMas)
                 {
                     p = false;
                     break; 
