@@ -4,27 +4,28 @@ namespace MasWithSpaces
 {
     class Program
     {
-        static void Main(string[] args)
+        static bool isPalindrome1(string[] array)
         {
-            string aStartMas;
-            string bAfterMas;
-            int i = 0;
-            bool p = true;
-            Console.WriteLine("\tВведите элементы (числа) массива-палиндрома через пробел");
-            string a = new string(Console.ReadLine());
-            string[] b = a.Split(new string[] {" "}, StringSplitOptions.RemoveEmptyEntries);
-            int k = a.Length / 2;
-            for (i = 0; i <= k; i++)
+            bool answer = true;
+            int k = array.Length / 2;
+            for (int i = 0; i <= k; i++)
             {
-                aStartMas = b[i];
-                bAfterMas = b[b.Length - 1 - i];
-                if (aStartMas != bAfterMas)
+                if (array[i] != array[array.Length - 1 - i])
                 {
-                    p = false;
-                    break; 
+                    answer = false;
+                    break;
                 }
             }
-            Console.WriteLine($"\t{p}"); 
+            return answer;
+        }
+
+        static void Main(string[] args)
+        {
+            string array;
+            Console.WriteLine("\tВведите элементы (числа) массива-палиндрома через пробел");
+            array = new string(Console.ReadLine());
+            string[] b = array.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            Console.WriteLine(isPalindrome1(b));
         }
     }
 }
