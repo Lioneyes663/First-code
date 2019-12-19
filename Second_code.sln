@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fifth_code", "Fifth_code\Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsPalindrome", "IsPalindrome\IsPalindrome.csproj", "{93B4851E-4727-4910-BC0B-41FCEF242B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasWithSpaces", "MasWithSpaces\MasWithSpaces.csproj", "{E55F91D7-B909-4DD0-8DD2-5DAED89CEE42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasWithSpaces", "MasWithSpaces\MasWithSpaces.csproj", "{E55F91D7-B909-4DD0-8DD2-5DAED89CEE42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadratnoeYravnenie", "QuadratnoeYravnenie\QuadratnoeYravnenie.csproj", "{2BA86F63-B230-474B-B717-4765E53FF3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E55F91D7-B909-4DD0-8DD2-5DAED89CEE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E55F91D7-B909-4DD0-8DD2-5DAED89CEE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E55F91D7-B909-4DD0-8DD2-5DAED89CEE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA86F63-B230-474B-B717-4765E53FF3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA86F63-B230-474B-B717-4765E53FF3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA86F63-B230-474B-B717-4765E53FF3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA86F63-B230-474B-B717-4765E53FF3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
